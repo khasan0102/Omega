@@ -213,7 +213,8 @@ html {
 						font-size: 16px;
 
 						img {
-							height: 12px;
+                     height: 12px;
+                     transition: transform 0.3s ease;
 						}
 					}
             }
@@ -225,6 +226,12 @@ html {
             }
 
 				.drop-active:hover {
+
+               a {
+                  img{
+                     transform: rotate(90deg);
+                  }
+               }
 					.drop-item2 {
 						height: auto;
 						background-color: #fff;

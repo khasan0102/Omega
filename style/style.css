@@ -259,10 +259,19 @@ html {
 
 .header-nav .nav-item .nav-list:hover .drop-item .drop-list a img {
   height: 12px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .header-nav .nav-item .nav-list:hover .drop-item .drop-active a {
   color: #5454d4;
+}
+
+.header-nav .nav-item .nav-list:hover .drop-item .drop-active:hover a img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .header-nav .nav-item .nav-list:hover .drop-item .drop-active:hover .drop-item2 {
