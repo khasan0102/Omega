@@ -69,6 +69,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   position: fixed;
+  z-index: 10;
   background-color: transparent;
 }
 
@@ -303,7 +304,7 @@ body {
   color: #5454d4;
 }
 
-.header-nav .get-start {
+.get-start {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,12 +318,197 @@ body {
           justify-content: center;
   background-color: #f04037;
   border-radius: 5px;
+  text-transform: capitalize;
   color: white;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 
-.header-nav .get-start:hover {
+.get-start:hover {
   background-color: #bd160d;
+}
+
+.site-main {
+  position: relative;
+  background-image: url("../images/oval.svg");
+  background-size: 672px;
+  background-position: left top;
+  background-repeat: no-repeat;
+  width: 100wv;
+  height: 100vh;
+  padding: 0.1px;
+}
+
+.getStart {
+  margin-top: 120px;
+}
+
+.getstart-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.getStart-info h1 {
+  font-size: 80px;
+  line-height: 84px;
+  color: #000;
+  width: 690px;
+  margin: 0;
+}
+
+.getStart-info p {
+  font-size: 20px;
+  line-height: 37px;
+  color: #696871;
+  width: 570px;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+.getStart-info .get-start {
+  width: 200px;
+  height: 60px;
+  background-color: #f0544c;
+  font-size: 21px;
+  line-height: 25px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.getStart-info .get-start:hover {
+  background-color: #f04037;
+}
+
+.getStart-info .watch {
+  font-size: 16px;
+  line-height: 19px;
+  color: #5454d4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+.getStart-info .watch img {
+  margin-right: 8px;
+}
+
+.getStart-mobile {
+  position: relative;
+}
+
+.getStart-mobile .mobile-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  border-radius: 5px;
+  width: 320px;
+  padding: 13px;
+}
+
+.getStart-mobile .mobile-text .check-box {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 13px;
+}
+
+.getStart-mobile .mobile-text p {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 19px;
+  margin: 0;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.getStart-mobile .mobile-blue {
+  background-color: #5454d4;
+  color: white;
+  top: 110px;
+  left: -100px;
+}
+
+.getStart-mobile .mobile-blue .check-box {
+  background-color: #fedc5a;
+}
+
+.getStart-mobile .mobile-gold {
+  position: absolute;
+  left: 130px;
+  top: 460px;
+  background-color: #fedc5a;
+}
+
+.getStart-mobile .mobile-gold .check-box {
+  background-color: #5454d4;
+}
+
+.getStart-mobile .mobile-gold p {
+  width: 230px;
+}
+
+.popularLinks {
+  position: relative;
+}
+
+.popular-line p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #696871;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popular-line p::after {
+  content: "";
+  height: 2px;
+  width: 55vw;
+  background-color: #eae9f2;
+  position: absolute;
+  right: 0;
+}
+
+.popular-item {
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
