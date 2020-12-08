@@ -6,9 +6,9 @@
    <link rel="stylesheet" href="./style/style.css">
    <title>Omega</title>
 </head>
-<body>
+<body id="body">
    <!-- SITE HEADER START  -->
-   <header class="site-header">
+   <header class="site-header" id="header">
      <div class="container header-cont">
       <a href="#" class="logo-link"><img src="./images/logo.svg" alt="Logo svg" width="80" height="30"></a>
 
@@ -66,6 +66,7 @@
          </div>
       </section>
 
+      <!-- START Popular SECTION  -->
       <section class="popularLinks">
          <div class="container">
             <div class="popular-line">
@@ -80,8 +81,65 @@
                <li class="popular-list"><a href="#"><img src="./images/forbes.svg" alt="forbes img"></a></li>
             </ul>
          </div>
+      </section> <!-- End popular section-->
+
+      <!-- START PERFECT PAGES  -->
+      <section class="perfect">
+         <div class="container perfect-box">
+            <ul class="perfect-item">
+               <li class="perfect-list">
+                  <a href="#" class="perfect-link">
+                     <img src="./images/icon1.svg" alt="icon svg" width="50" height="50">
+                     <h1>Multiple Layouts</h1>
+                     <p>With lots of unique blocks, you can easily build a page without coding.</p>
+                  </a>
+               </li>
+               <li class="perfect-list">
+                  <a href="#" class="perfect-link">
+                     <img src="./images/icon2.svg" alt="icon svg" width="50" height="50">
+                     <h1>Fully Responsive</h1>
+                     <p>With lots of unique blocks, you can easily build a page without coding.</p>
+                  </a>
+               </li>
+               <li class="perfect-list">
+                  <a href="#" class="perfect-link">
+                     <img src="./images/icon3.svg" alt="icon svg" width="50" height="50">
+                     <h1>Well Documented</h1>
+                     <p>With lots of unique blocks, you can easily build a page without coding.</p>
+                  </a>
+               </li>
+               <li class="perfect-list">
+                  <a href="#" class="perfect-link">
+                     <img src="./images/icon4.svg" alt="icon svg" width="50" height="50">
+                     <h1>Great Support</h1>
+                     <p>With lots of unique blocks, you can easily build a page without coding.</p>
+                  </a>
+               </li>
+            </ul>
+
+            <div class="perfect-info">
+               <h1>Build a perfect landing page fast.</h1>
+               <p>Create custom landing pages with Omega that converts more visitors than any website. With lots of unique blocks, you can easily build a page without coding.</p>
+               <a href="#">Check all features</a>
+            </div>
+         </div>
+         <img src="./images/white-curvesvg.svg" alt="white-curvesvg img" width="100%" class="svg"> 
       </section>
    </main>
 
+   
+
+
+
+
+
+
+   
+   <script>
+      let header = document.querySelector('#header');
+      window.addEventListener('scroll', function(){
+         header.classList.toggle("bg", window.scrollY > 0)
+      });
+   </script>
 </body>
 </html>

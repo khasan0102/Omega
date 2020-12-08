@@ -74,6 +74,7 @@ body {
 	position: fixed;
 	z-index: 10;
 	background-color: transparent;
+	transition: background-color 0.5s ease, box-shadow 0.3s ease;
 
 	.header-cont {
 		width: 95%;
@@ -82,6 +83,11 @@ body {
 		align-items: center;
 		justify-content: space-between;
 	}
+}
+
+.bg {
+	background-color: white;
+	box-shadow: 0 4px 7px rgba(0, 0, 0, 0.445);
 }
 
 .header-nav {
@@ -284,13 +290,10 @@ body {
 }
 
 .site-main {
-	position: relative;
 	background-image: url('../images/oval.svg');
 	background-size: 672px;
 	background-position: left top;
 	background-repeat: no-repeat;
-	width: 100wv;
-	height: 100vh;
 	padding: 0.1px;
 }
 
@@ -427,10 +430,109 @@ body {
 	}
 }
 
-.popular-item{
-	padding:0;
+.popular-item {
+	padding: 0;
 	list-style-type: none;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
+
+.perfect {
+	position: relative;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: $active-color;
+	background-image: url('../images/bggold.svg');
+	background-position: top right;
+	background-repeat: no-repeat;
+	padding-top: 150px;
+	padding-bottom: 150px;
+
+	.svg {
+		position: absolute;
+		bottom: -10px;
+	}
+}
+
+.perfect-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 1200px;
+}
+
+.perfect-item {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+
+	.perfect-link {
+		display: flex;
+		flex-direction: column;
+		width: 255px;
+		height: 257px;
+		background-color: white;
+		border-radius: 7px;
+		margin: 15px;
+		padding: 20px;
+		transition: box-shadow 0.3s ease;
+
+		h1 {
+			font-size: 24px;
+			line-height: 28px;
+			color: $heading-color;
+			margin: 0;
+			margin-top: 23px;
+			margin-bottom: 13px;
+		}
+
+		p {
+			font-size: 15px;
+			line-height: 25px;
+			color: $text-color;
+			margin: 0;
+		}
+	}
+
+	.perfect-link:hover {
+		box-shadow: 0 0px 10px 7px rgb(200, 206, 207);
+	}
+}
+
+.perfect-info {
+	color: white;
+	margin: 0;
+	h1 {
+		font-size: 50px;
+		line-height: 70px;
+		margin: 0;
+		width: 515px;
+	}
+
+	p {
+		font-size: 19px;
+		line-height: 35px;
+		width: 515px;
+	}
+
+	a {
+		border: 1px solid #eae9f2;
+		border-radius: 5px;
+		color: white;
+		padding: 15px 22px;
+		display: inline-block;
+		margin-top: 10px;
+		font-weight: 500;
+		transition: background-color 0.4s ease, color 0.4s ease;
+	}
+
+	a:hover{
+		background-color: white;
+		color: $active-color;
+	}
+}
+
+// end perfect styles 

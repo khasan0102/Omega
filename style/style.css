@@ -71,6 +71,10 @@ body {
   position: fixed;
   z-index: 10;
   background-color: transparent;
+  -webkit-transition: background-color 0.5s ease, -webkit-box-shadow 0.3s ease;
+  transition: background-color 0.5s ease, -webkit-box-shadow 0.3s ease;
+  transition: background-color 0.5s ease, box-shadow 0.3s ease;
+  transition: background-color 0.5s ease, box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
 }
 
 .site-header .header-cont {
@@ -85,6 +89,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.bg {
+  background-color: white;
+  -webkit-box-shadow: 0 4px 7px rgba(0, 0, 0, 0.445);
+          box-shadow: 0 4px 7px rgba(0, 0, 0, 0.445);
 }
 
 .header-nav {
@@ -329,13 +339,10 @@ body {
 }
 
 .site-main {
-  position: relative;
   background-image: url("../images/oval.svg");
   background-size: 672px;
   background-position: left top;
   background-repeat: no-repeat;
-  width: 100wv;
-  height: 100vh;
   padding: 0.1px;
 }
 
@@ -510,5 +517,122 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.perfect {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #5454d4;
+  background-image: url("../images/bggold.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.perfect .svg {
+  position: absolute;
+  bottom: -10px;
+}
+
+.perfect-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1200px;
+}
+
+.perfect-item {
+  list-style-type: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.perfect-item .perfect-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 255px;
+  height: 257px;
+  background-color: white;
+  border-radius: 7px;
+  margin: 15px;
+  padding: 20px;
+  -webkit-transition: -webkit-box-shadow 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+}
+
+.perfect-item .perfect-link h1 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000;
+  margin: 0;
+  margin-top: 23px;
+  margin-bottom: 13px;
+}
+
+.perfect-item .perfect-link p {
+  font-size: 15px;
+  line-height: 25px;
+  color: #696871;
+  margin: 0;
+}
+
+.perfect-item .perfect-link:hover {
+  -webkit-box-shadow: 0 0px 10px 7px #c8cecf;
+          box-shadow: 0 0px 10px 7px #c8cecf;
+}
+
+.perfect-info {
+  color: white;
+  margin: 0;
+}
+
+.perfect-info h1 {
+  font-size: 50px;
+  line-height: 70px;
+  margin: 0;
+  width: 515px;
+}
+
+.perfect-info p {
+  font-size: 19px;
+  line-height: 35px;
+  width: 515px;
+}
+
+.perfect-info a {
+  border: 1px solid #eae9f2;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 22px;
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 500;
+  -webkit-transition: background-color 0.4s ease, color 0.4s ease;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.perfect-info a:hover {
+  background-color: white;
+  color: #5454d4;
 }
 /*# sourceMappingURL=style.css.map */
