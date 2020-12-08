@@ -78,7 +78,8 @@ body {
 }
 
 .site-header .header-cont {
-  width: 95%;
+  max-width: 1920px;
+  padding: 0 40px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -521,7 +522,7 @@ body {
 
 .perfect {
   position: relative;
-  width: 100%;
+  max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
   background-color: #5454d4;
@@ -530,6 +531,7 @@ body {
   background-repeat: no-repeat;
   padding-top: 150px;
   padding-bottom: 150px;
+  margin-top: 60px;
 }
 
 .perfect .svg {
@@ -634,5 +636,116 @@ body {
 .perfect-info a:hover {
   background-color: white;
   color: #5454d4;
+}
+
+.customer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.customer-box h1 {
+  font-size: 55px;
+  line-height: 70px;
+  color: #000;
+  text-align: center;
+  width: 540px;
+}
+
+.customer-box a {
+  margin-top: 30px;
+  color: #5454d4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.customer-box a img {
+  margin-right: 10px;
+}
+
+.customer-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+}
+
+.customer-item .customer-list a {
+  background: #ffffff;
+  border: 1px solid #eae9f2;
+  border-radius: 10px;
+  width: 320px;
+  height: 252px;
+  display: inline-block;
+  padding: 25px;
+  -webkit-transition: -webkit-box-shadow 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+}
+
+.customer-item .customer-list a .nike-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.customer-item .customer-list a .nike-name .nike-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.customer-item .customer-list a .nike-name .nike-info h4 {
+  color: #000;
+  margin: 0;
+}
+
+.customer-item .customer-list a .nike-name .nike-info p {
+  margin: 0;
+  color: #696871;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.customer-item .customer-list a p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000;
+  margin-top: 25px;
+}
+
+.customer-item .customer-list a p span {
+  color: #5454d4;
+}
+
+.customer-item .customer-list a:hover {
+  -webkit-box-shadow: 0 0 10px 3px rgba(65, 62, 101, 0.296766);
+          box-shadow: 0 0 10px 3px rgba(65, 62, 101, 0.296766);
 }
 /*# sourceMappingURL=style.css.map */
