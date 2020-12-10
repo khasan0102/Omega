@@ -679,7 +679,7 @@ body {
 .save-img-box .img-border {
   position: absolute;
   left: 72px;
-  top: 0px;
+  top: -20px;
 }
 
 .need {
