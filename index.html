@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./style/style.css">
+   
    <title>Omega</title>
 </head>
 <body id="body">
@@ -37,19 +38,18 @@
             <li class="nav-list"><a href="#" class="navLink">pages</a></li>
             <li class="nav-list"><a href="#" class="navLink">support</a></li>
          </ul>
-         <a href="#" class="get-start">get started</a>
+         <a href="#login" class="get-start">get started</a>
       </nav>
      </div>
    </header> <!-- end header -->
-
    <!-- START MAIN  -->
    <main class="site-main">
-      <section class="getStart">
+      <section class="getStart" id="getstart">
          <div class="container getstart-box">
             <div class="getStart-info">
                <h1>Redesigned, how you build landing page!</h1>
                <p>Create custom landing pages with Omega that convert more visitors than any website. With lots of unique blocks, you can easily build a page without coding.</p>
-               <a href="#" class="get-start">get started</a>
+               <a href="#login" class="get-start">get started</a>
                <a href="#" class="watch"><img src="./images/path.svg" alt="Path img" width="11" height="13"> Watch the intro video</a>
             </div>
             <div class="getStart-mobile">
@@ -126,7 +126,53 @@
          <img src="./images/white-curvesvg.svg" alt="white-curvesvg img" width="100%" class="svg"> 
       </section> <!--end perfect section-->
 
+      <!-- start save section  -->
 
+      <section class="save">
+         <div class="container save-box">
+            <div class="save-info">
+               <h1>Save tons of time on design & coding.</h1>
+               <p>Create custom landing pages with Omega that converts more visitors than any website. With lots of unique blocks, you can easily build a page without coding.</p>
+               <a href="#login" class="get-start">get started</a>
+            </div>
+            <div class="save-img-box">
+               <img src="./images/Img.jpg" srcset="./images/Img.jpg 1x, ./images/Img@2x.jpg 2x" alt="men img" width="380" height="560">
+               <img src="./images/Rectangle.svg" alt="Rectangle img" width="300" height="560" class="img-border">
+            </div>
+         </div>
+      </section> <!-- end save section -->
+
+
+      <!-- start need section  -->
+      <section class="need">
+         <img src="./images/white-curve-2.svg" alt="white-curve-2 img" class="white-cursive">
+         <div class="container need-box">
+            <div class="save-img-box">
+               <img src="./images/BG.png" srcset="./images/BG.png 1x, ./images/BG@2x.png 2x" alt="men img" width="400" height="560">
+               <img src="./images/Rectangle.svg" alt="Rectangle img" width="300" height="560" class="img-border">
+            </div>
+            <div class="need-info">
+               <h1>It’s everything you’ll ever need.</h1>
+               <p>Create custom landing pages with Omega that converts more visitors than any website. With lots of unique blocks, you can easily build a page without coding.</p>
+
+               <a href="#" class="deside-box">
+                  <img src="./images/icon1.svg" alt="icon img" width="55" height="55">
+                  <div class="deside-info">
+                     <h4>Mobile First Design</h4>
+                     <span>on Every Devices</span>
+                  </div>
+               </a>
+
+               <a href="#" class="deside-box">
+                  <img src="./images/icon3.svg" alt="icon img" width="55" height="55">
+                  <div class="deside-info">
+                     <h4>Mobile First Design</h4>
+                     <span>on Every Devices</span>
+                  </div>
+               </a>
+            </div>
+         </div>
+      </section>
 
       <!-- START CUSTOMER SECTION -->
 
@@ -187,15 +233,97 @@
             <a href="#" class="chat"><img src="./images/chat.svg" alt="chat img"> See all testimonials</a>
          </div>
       </section>
+
+      <section class="login" id="login">
+         <img src="./images/white-curve2svg.svg" alt="white-curve2">
+         <div class="container login-box">
+            <h1>Get started</h1>
+            <p>Create custom landing pages with Omega that converts more visitors than any website. With lots of unique blocks, you can easily build a page without coding.</p>
+
+            <form action="#" class="login-form">
+               <input type="text" name="name" id="name" placeholder="Your Name">
+               <input type="email" name="email" id="email" placeholder="Your Email">
+               <button type="reset">get start</button>
+            </form>
+         </div>
+      </section>
    </main>
 
-   
+   <!-- start site footer  -->
 
+   <footer class="site-footer">
+      <div class="container">
+        <div class="footer-link">
+         <a href="#getstart" class="footer-logo"><img src="./images/Omega.svg" alt="logo white img" width="80" height="30"></a>
 
+         <div class="footer-links">
+            <h3>About</h3>
 
+            <ul class="footer-links-item">
+               <li class="footer-links-list"><a href="#">Our mission</a></li>
+               <li class="footer-links-list"><a href="#">Our story</a></li>
+               <li class="footer-links-list"><a href="#">Team Members</a></li>
+            </ul>
+         </div>
+         <div class="footer-links">
+            <h3>Learn</h3>
 
+            <ul class="footer-links-item">
+               <li class="footer-links-list"><a href="#">Tutorials</a></li>
+               <li class="footer-links-list"><a href="#">How it works</a></li>
+               <li class="footer-links-list"><a href="#">F.A.Q</a></li>
+            </ul>
+         </div>
+         <div class="footer-links">
+            <h3>Stories</h3>
 
+            <ul class="footer-links-item">
+               <li class="footer-links-list"><a href="#">Blog</a></li>
+               <li class="footer-links-list"><a href="#">Tech stories</a></li>
+            </ul>
+         </div>
+         <div class="footer-links">
+            <h3>Hire</h3>
 
+            <ul class="footer-links-item">
+               <li class="footer-links-list"><a href="#">Career</a></li>
+               <li class="footer-links-list"><a href="#">Freelancers</a></li>
+               <li class="footer-links-list"><a href="#">Trainee</a></li>
+            </ul>
+         </div>
+        </div> <!--end footer link-->
+
+        <hr class="footer-line">
+
+        <div class="footer-bottom">
+           <p>© 2020 UXTheme, All Rights Reserved</p>
+
+           <nav class="footer-nav">
+              <ul class="footer-bottom-item">
+                 <li class="footer-bottom-list">
+                    <a href="#">
+                     <img src="./images/logo-twitter.svg" alt="twitter-logo" width="16" height="16" class="active">
+                     <img src="./images/twitter-active.svg" alt="twitter-logo" width="16" height="16" 
+                     class="block">
+                    </a>
+                 </li>
+                 <li class="footer-bottom-list">
+                    <a href="#">
+                       <img src="./images/facebook-active.svg" alt="facebook logo" width="16" height="16" class="block">
+                       <img src="./images/facebook-logo.svg" alt="facebook logo" width="16" height="16" class="active">
+                    </a>
+                 </li>
+                 <li class="footer-bottom-list">
+                    <a href="#">
+                       <img src="./images/telegram.svg" alt="telegram logo" width="16" height="16" class="active">
+                       <img src="./images/telegram-active.svg" alt="telegram logo" width="16" height="16" class="block">
+                    </a>
+                 </li>
+              </ul>
+           </nav>
+        </div>
+      </div>
+   </footer>
    
    <script>
       let header = document.querySelector('#header');
